@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework Help Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Homework Help Hub</h1>
+      <nav>
+        <a href="#post" class="mx-2 hover:underline">Post Homework</a>
+        <a href="#experts" class="mx-2 hover:underline">Find Experts</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-white">
+    <h2 class="text-4xl font-bold mb-4">Get Expert Help With Your Homework</h2>
+    <p class="text-lg mb-6">Connect with verified problem solvers in minutes.</p>
+    <a href="#post" class="bg-blue-600 text-white py-2 px-6 rounded shadow hover:bg-blue-700">Post a Question</a>
+  </section>
+
+  <!-- Post Homework Form -->
+  <section id="post" class="max-w-4xl mx-auto p-6 bg-white my-10 shadow rounded">
+    <h3 class="text-2xl font-semibold mb-4">Post Your Homework</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border p-2 rounded" required />
+      <input type="email" placeholder="Email Address" class="w-full border p-2 rounded" required />
+      <textarea placeholder="Describe your homework problem..." class="w-full border p-2 rounded h-32" required></textarea>
+      <button type="submit" class="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700">Submit</button>
+    </form>
+  </section>
+
+  <!-- Expert Showcase -->
+  <section id="experts" class="max-w-6xl mx-auto p-6 bg-gray-50 my-10">
+    <h3 class="text-2xl font-semibold mb-6">Meet Our Experts</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 shadow rounded">
+        <h4 class="text-lg font-bold">Alex R.</h4>
+        <p>Math & Physics Tutor<br/>Rating: ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h4 class="text-lg font-bold">Maria T.</h4>
+        <p>English & History Tutor<br/>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h4 class="text-lg font-bold">Dr. Chen</h4>
+        <p>Biology & Chemistry Expert<br/>Rating: ⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    &copy; 2025 Homework Help Hub. All rights reserved.
+  </footer>
+</body>
+</html>
